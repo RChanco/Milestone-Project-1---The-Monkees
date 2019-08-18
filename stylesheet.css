@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
-@font-face {
-  font-family: Comic Sans MS;
-}
-*{
-  box-sizing: border-box;
-  font-family: Raleway;
-  color: #777;
-}
 
 html, body{
   margin: 0;
@@ -17,60 +9,21 @@ html, body{
 }
 .main-header{
   background-color: rgba(0, 0, 0, .6);
-  background-image: url("https://format-magazine-production-res.cloudinary.com/image/upload/c_crop,h_890,w_1068,x_44,y_0,f_jpg,f_auto/dpr_3.0/c_scale,w_767,h_639/pexels-photo-1020315");
+/*  background-image: url("https://format-magazine-production-res.cloudinary.com/image/upload/c_crop,h_890,w_1068,x_44,y_0,f_jpg,f_auto/dpr_3.0/c_scale,w_767,h_639/pexels-photo-1020315");
+*/
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGe8aahf4O08PG7e0F2lWO23103uUa1iZx1auM-s60tAvD2QTR");
   background-blend-mode: multiply;
   background-size: cover;
   padding-bottom: 30px;
 }
 
-
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  /*  background-color: #333; */
-    background-color: rgba(255, 255, 255, .1);
-  }
-  
-  .nav li {
-    display: inline;
-  }
-
-  .nav a {
-    display: inline-block;
-    padding: .5em;
-    color: white;
-    text-decoration: none;
-  }
-  .main-nav {
-    text-align: left;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
-  }
-
-  .main-nav li {
-    padding: 0 5%;
-  }
-  
-  /* Change the link color to #ffffff (gray) on hover */
-  
-  .nav a:hover {
-      background-color: rgba(255, 255, 255, .3)
-  }
  
-  .band-name {
-    text-align: center;
-    margin: 0;
-    font-size: 5em;
-    font-family:  'Metal Mania';
-    font-weight: normal;
-    color: white;
-  }
-
   .band-name-large {
-      font-size: 8em;
+      font-size: 5em;
+      text-align: center;
+      font-family:  'Metal Mania';
+      font-weight: normal;
+      color: white;
   }
 
   .content-section {
@@ -124,7 +77,18 @@ html, body{
       width: 30px;
       height: 30px;
   }
-
+  
+  
+   /* The Monkees - footer */
+   .band-name {
+    text-align: left;
+    margin: 0;
+    font-size: 3em;
+    font-family:  'Metal Mania';
+    font-weight: normal;
+    color: white;
+    background-size: cover;
+  }
   .btn {
       text-align:  center;
       vertical-align: middle;
@@ -164,12 +128,15 @@ html, body{
 /*
   .tour-row-container {
       background-color: lightskyblue;
+      background-size: cover;
   }
 */
+
   .tour-row {
       border-bottom: 1px solid black;
       padding-bottom: 1em;
       margin-bottom: 1em; 
+      
   }
 
   .tour-row:last-child {
@@ -239,10 +206,12 @@ html, body{
       border-radius: .3em;
       font-weight: bold;
       color: #333;
+      margin-bottom: 5px;
   }
 
   .btn-primary:hover {
       background-color: #2D9CDB;
+      
   }
 
   .cart-header {
@@ -344,12 +313,88 @@ html, body{
       font-size: 1.75em;
   }
 
-  .social-links {
+/*
+.social-links {
+    text-align: right;
+    padding: 15px;
     font-size: 26px;
     margin: 0 10px 0 0;
     color: #000000;
     text-decoration: none;
+}  
+*/
+/*
+.social-links {
+    text-align: center;
+    padding: 15px;
+    font-size: 26px;
+    margin: 0 10px 0 0;
+ /*   color: #000000; 
+    text-decoration: none;
 }
+*/  
+
+.footer-nav {
+    padding: 15px;
+    font-size: 26px;
+    margin-left: 700px;
+    color: #000000;
+    text-decoration: none;
+}  
+
+.main-form {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center; 
+    font-size: 1.5em;
+    margin-bottom: 10px;
+} 
+
+
+
+
+.form-control {
+    height: 34px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center; 
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+/*
+.form-group {
+    height: 34px;
+    width: 250px;
+    margin-right: 10px;
+    padding: 10px;
+    color: #EB5757;
+}
+*/
+.form-column {
+    display: flex;
+/*    border-bottom: 1px solid black; */
+    align-items: center;
+    margin-right: 1.0em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    width: 34%;
+}
+
+.form-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.form-title {
+    width: 24%;
+}
+
   .text-muted {
       text-align: center;
   }
